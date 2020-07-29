@@ -1,16 +1,12 @@
-// const testVar = {}
 
-// function testFunc() {
-//   return "hi"
-// }
-
+// My solution
 function superbowlWin(record){
-  let answer;
-  for (let object in record) {
-    // object.find( function(e) { return e.result === "W"})
-    if (object[result] === "W"){
-      answer = object;
-    }
-  }
-  return answer[year];
+    let answer = record.find( function(e) { return e.result === "W"})
+    return !!answer ? answer.year : undefined
 }
+
+// Flatiron Solution
+// superbowlWin = (record) => {
+//   let result = record.find( record => record.result === "W" )
+//   return !!result ? result.year : undefined
+// }
