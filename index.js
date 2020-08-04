@@ -66,15 +66,12 @@ const record = [
   { year: "1960", result: "N/A"}
 ]
 
-function superBowlWin(record) {
-  return record.find(function(r) {return r.result === "W"}).year
+function superbowlWin(record) {
+  let result =  record.find(function(r) {return r.result === "W"})
+  return result === undefined ? undefined : result.year
 }
 
-// const superBowlWin = (record) => {
-//   return record.find(function(row) {
-//     row.result === "W" ? row.year : undefined
-//   })
-// }
+
 
 // superBowlWin(record)
 
