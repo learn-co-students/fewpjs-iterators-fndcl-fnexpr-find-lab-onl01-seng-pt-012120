@@ -6,9 +6,9 @@ function testFunc() {
 
 let superbowlWin = (a) => {
   a.find(function(season){
+    debugger;
     if(season.result === 'W'){
-      debugger;
-      return season.year;
-    }; 
-  });
+      return season
+    } 
+  })
 };
